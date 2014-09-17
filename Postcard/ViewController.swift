@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtMessage: UITextField!
     @IBOutlet weak var mailButton: UIButton!
+    @IBOutlet weak var nameLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -29,13 +30,16 @@ class ViewController: UIViewController {
     @IBAction func btnSendMail(sender: UIButton) {
         // Code evaluate when we press the button
         messageLabel.hidden = false
+        nameLabel.hidden = false
+        nameLabel.text = txtName.text
+        nameLabel.textColor = UIColor.blueColor()
         messageLabel.text = txtMessage.text
+        messageLabel.textColor = UIColor.redColor() // Change color of text
         txtName.text = ""
         txtMessage.text = ""
         txtMessage.resignFirstResponder() // Hide the keyboard
-        messageLabel.textColor = UIColor.redColor() // Change color of text
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal) // Change button's text
-        // Testing
+        
     }
 
 }

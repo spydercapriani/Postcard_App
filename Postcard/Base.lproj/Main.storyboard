@@ -103,6 +103,15 @@
                                     <action selector="btnSendMail:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L3L-Qb-91c"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMT-dM-iBB">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="135" width="200" height="40"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +121,7 @@
                                 <exclude reference="LOP-zC-Jv3"/>
                                 <exclude reference="3sl-WE-nPg"/>
                                 <exclude reference="Qdu-5G-BOP"/>
+                                <exclude reference="nMT-dM-iBB"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,6 +131,7 @@
                                 <include reference="LOP-zC-Jv3"/>
                                 <include reference="3sl-WE-nPg"/>
                                 <include reference="Qdu-5G-BOP"/>
+                                <include reference="nMT-dM-iBB"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +140,7 @@
                     <connections>
                         <outlet property="mailButton" destination="Qdu-5G-BOP" id="wph-Tk-D40"/>
                         <outlet property="messageLabel" destination="hjP-Qn-zq9" id="osQ-kg-dJY"/>
+                        <outlet property="nameLabel" destination="nMT-dM-iBB" id="wc3-67-5F8"/>
                         <outlet property="txtMessage" destination="3sl-WE-nPg" id="kXd-Gv-JwF"/>
                         <outlet property="txtName" destination="LOP-zC-Jv3" id="MqJ-fu-3ds"/>
                     </connections>
