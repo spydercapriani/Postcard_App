@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         txtMessage.resignFirstResponder() // Hide the keyboard
         messageLabel.textColor = UIColor.redColor() // Change color of text
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal) // Change button's text
+        // adding a comment here to test commits
     }
 
 }
